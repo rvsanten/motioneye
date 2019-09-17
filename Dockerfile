@@ -23,5 +23,4 @@ RUN mkdir -p /etc/motioneye \
     && chmod +x /etc/init.d/motioneye && update-rc.d -f motioneye defaults
  
 EXPOSE 8765
- 
 CMD /etc/init.d/motioneye start && tail -f /var/log/motioneye.log
